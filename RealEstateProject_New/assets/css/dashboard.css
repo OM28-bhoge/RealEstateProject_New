@@ -1,0 +1,71 @@
+﻿/* Dashboard container */
+.dashboard-container {
+    min-height: 90vh;
+    background: #f8f9fa;
+    padding: 40px 20px;
+    padding-top: 100px;
+}
+
+/* Dashboard header - full width banner */
+.dashboard-header {
+    background: #007bff;
+    padding: 25px 0;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+    .dashboard-header h2 {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0;
+    }
+
+/* Row layout for cards */
+.dashboard-container .row {
+    display: flex;
+    justify-content: center; /* center cards horizontally */
+    gap: 40px; /* space between cards */
+    flex-wrap: wrap; /* responsive stacking */
+    max-width: 1200px; /* ✅ limit total width */
+    margin: 0 auto; /* ✅ center the whole row */
+    padding-left: 40px;
+}
+
+
+/* Card styles */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 300px;
+    min-height: 200px; /* ✅ Same height for all cards */
+    display: flex; /* ✅ Flexbox for alignment */
+    flex-direction: column;
+    justify-content: space-between; /* Keeps button at bottom */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+    }
+
+    .card h4 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    /* Buttons inside cards */
+    .card .btn {
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 8px;
+        padding: 12px 25px;
+        align-self: center; /* ✅ Centers button */
+    }

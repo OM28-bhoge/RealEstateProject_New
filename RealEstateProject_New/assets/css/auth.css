@@ -1,0 +1,132 @@
+﻿/* Auth container */
+.auth {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+/* Auth / Register card */
+.auth-form-light {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+    padding: 40px 30px;
+    width: 100%;
+    max-width: 400px; /* same as login */
+    text-align: center;
+}
+
+/* Brand logo */
+.brand-logo img {
+    width: 200px; /* match login size */
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Headings */
+.auth-form-light h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+}
+
+.auth-form-light h6 {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+/* Input fields */
+.form-control,
+.form-select {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+    .form-control:focus,
+    .form-select:focus {
+        border-color: #2575fc;
+        box-shadow: 0 0 6px rgba(37,117,252,0.3);
+        outline: none;
+    }
+
+/* Buttons */
+.auth-form-btn,
+.btn-gradient-primary {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-gradient-primary {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+    .btn-gradient-primary:hover {
+        background: linear-gradient(to right, #2575fc, #6a11cb);
+    }
+
+/* Validation messages */
+.text-danger {
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+    .auth-form-light {
+        padding: 30px 20px;
+        max-width: 95%;
+    }
+}
+
+
+.mobile-row {
+    display: flex; /* Makes the div a flex container */
+    gap: 10px; /* Adds space between the items */
+    align-items: center; /* Vertically aligns the items */
+}
+
+.country-code {
+    flex: 0 0 auto; /* Prevents the dropdown from growing or shrinking */
+    width: 80px; /* Adjust the width as needed */
+}
+
+.mobile-input {
+    flex-grow: 1; /* Allows the mobile number input to take up the rest of the space */
+}
+
+
+.gender-row {
+    display: flex; /* Aligns the label and radio buttons horizontally */
+    align-items: center; /* Vertically aligns the items */
+    gap: 15px; /* Adds spacing between the label and the radio buttons */
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.gender-label {
+    margin-right: 10px; /* Provides space between the "Gender:" text and the radio buttons */
+}
+
+.gender-radio-list {
+    flex-grow: 1; /* Makes the radio button list take up the rest of the space */
+    display: flex; /* Ensures the radio button list items are aligned horizontally */
+    gap: 15px; /* Adds space between "Male", "Female", and "Other" */
+}

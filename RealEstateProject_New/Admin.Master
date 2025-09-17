@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="RealEstateProject_New.Admin" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <title>Admin Dashboard</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <div class="wrapper">
+            <!-- Sidebar -->
+            <aside id="sidebar" runat="server" class="sidebar">
+                <div class="logo">Admin</div>
+                <div class="profile">
+                    <img src="assets/images/user.jpg" class="avatar" />
+                    <h4>Admin</h4>
+                    <p>Project Manager</p>
+                </div>
+                <ul class="menu">
+                    <li><a href="Admindashboard.aspx"><i class="fa fa-home"></i>Dashboard</a></li>
+                    <li><a href="Icon.aspx"><i class="fa fa-icons"></i>Icons</a></li>
+                    <li><a href="Forms.aspx"><i class="fa fa-list"></i>Forms</a></li>
+                    <li><a href="Charts.aspx"><i class="fa fa-chart-bar"></i>Charts</a></li>
+                    <li><a href="Table.aspx"><i class="fa fa-table"></i>Tables</a></li>
+                    <li><a href="Docs.aspx"><i class="fa fa-book"></i>Docs</a></li>
+                </ul>
+            </aside>
+
+            <!-- Main Content -->
+            <div class="main">
+                <!-- Top Navigation -->
+                <nav id="topnav" runat="server" class="topnav">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search projects" />
+                    </div>
+                    <!-- Logout Button -->
+                    <div class="nav-right">
+                        <asp:LinkButton ID="lnkLogout" runat="server" CssClass="btn btn-danger btn-sm" OnClick="Logout_Click">
+                         <i class="fa fa-power-off"></i> Logout
+                        </asp:LinkButton>
+                    </div>
+                </nav>
+
+                <!-- Page Content Placeholder -->
+                <div class="content">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+                </div>
+
+                <!-- Footer -->
+                <footer class="footer">
+                    <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2025 <a href="#">RealEstate_RainbowHousing</a>. All rights reserved.
+                        </span>
+                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Created By Om Bhoge</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </form>
+
+    <asp:ContentPlaceHolder ID="ScriptsContent" runat="server"></asp:ContentPlaceHolder>
+
+    <script>
+        document.querySelectorAll('.dropdown-toggle').forEach(item => {
+            item.addEventListener('click', function () {
+                this.parentElement.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>

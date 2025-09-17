@@ -1,0 +1,182 @@
+﻿/* ===========================
+   GENERAL RESET
+=========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===========================
+   CAREER INFO SECTION
+=========================== */
+section.container {
+    padding-top: 80px; /* reduce gap from navbar */
+    padding-bottom: 40px;
+    margin-top: 50px;
+}
+
+    section.container h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    section.container p.lead {
+        font-size: 1.2rem;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    section.container h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #0d6efd;
+        font-weight: 600;
+    }
+
+    section.container p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    section.container ul {
+        list-style: disc;
+        padding-left: 20px;
+        margin-top: 10px;
+    }
+
+        section.container ul li {
+            margin-bottom: 8px;
+        }
+
+/* ===========================
+   IMAGE STYLING
+=========================== */
+section img.img-fluid {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ===========================
+   GRIDVIEW / TABLE
+=========================== */
+.table-responsive {
+    overflow-x: auto;
+    margin-top: 30px;
+}
+
+table.table {
+    width: 100%;
+    margin-bottom: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.95rem;
+}
+
+    table.table th,
+    table.table td {
+        padding: 12px 15px;
+        vertical-align: middle;
+    }
+
+    table.table th {
+        background-color: #0d6efd;
+        color: #fff;
+        font-weight: 600;
+        text-align: left;
+    }
+
+    table.table tbody tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    table.table tbody tr:hover {
+        background-color: #e9ecef;
+        transition: 0.3s;
+    }
+
+.btn-sm {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+}
+
+/* ===========================
+   EMPTY DATA MESSAGE
+=========================== */
+.EmptyDataTemplate div {
+    color: #666;
+    font-size: 1rem;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* ===========================
+   FORM STYLING (CareerApply.aspx)
+=========================== */
+#pnlForm {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+    #pnlForm .form-label {
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    #pnlForm .form-control {
+        margin-bottom: 15px;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ced4da;
+    }
+
+    #pnlForm .btn-primary {
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 992px) {
+    section.container h1 {
+        font-size: 2rem;
+    }
+
+    section.container p.lead {
+        font-size: 1rem;
+    }
+
+    #pnlForm {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    section.container h1 {
+        font-size: 1.8rem;
+    }
+
+    section.container p.lead {
+        font-size: 0.95rem;
+    }
+
+    section.container h2 {
+        font-size: 1.5rem;
+    }
+
+    section.container p {
+        font-size: 0.9rem;
+    }
+}
